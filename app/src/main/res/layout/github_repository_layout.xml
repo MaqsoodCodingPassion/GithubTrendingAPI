@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.msk.github.trend.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/shimmer_place_holder" />
+            <include layout="@layout/shimmer_place_holder" />
+            <include layout="@layout/shimmer_place_holder" />
+            <include layout="@layout/shimmer_place_holder" />
+            <include layout="@layout/shimmer_place_holder" />
+            <include layout="@layout/shimmer_place_holder" />
+            <include layout="@layout/shimmer_place_holder" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshRecyclerView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/githubRepoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layoutManager="LinearLayoutManager"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/offlineView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/nointernet_connection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_24"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/something_wrong"
+            android:textAlignment="center"
+            android:textColor="@color/went_wrong_color"
+            android:textSize="@dimen/font_size_18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_8"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/alien_blocking_str"
+            android:textColor="@color/alien_block"
+            android:textSize="@dimen/font_size_15sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/retryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        style="@style/greenButtonOutline"
+        android:text="@string/retry"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16" />
+
+</RelativeLayout>
+

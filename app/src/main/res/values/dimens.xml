@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="row_item_margin">12dp</dimen>
+    <dimen name="repo_name_size">24sp</dimen>
+    <dimen name="repo_description_size">16sp</dimen>
+
+    <dimen name="btn_height">48dp</dimen>
+    <dimen name="large_margin">32dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="height_280">280dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_23">23dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="size_120">120dp</dimen>
+    <dimen name="size_150">150dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="profile_image_size">42dp</dimen>
+    <dimen name="font_size_12dp">12dp</dimen>
+    <dimen name="font_size_15sp">15sp</dimen>
+    <dimen name="font_size_18sp">18sp</dimen>
+
+    <dimen name="activityPadding">16dp</dimen>
+    <dimen name="placeholderTextHeight">8dp</dimen>
+</resources>

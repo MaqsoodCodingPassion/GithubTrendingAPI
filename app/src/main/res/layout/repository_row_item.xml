@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingTop="@dimen/margin_21"
+    android:paddingBottom="@dimen/margin_21">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="@dimen/profile_image_size"
+        android:layout_height="@dimen/profile_image_size"
+        android:layout_marginLeft="@dimen/margin_16" />
+
+    <LinearLayout
+        android:id="@+id/topPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_toRightOf="@id/profileImageView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/font_12_or_15dp_color"
+            android:textSize="@dimen/font_size_12dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/font_12_or_15dp_color"
+            android:textSize="@dimen/font_size_15sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topPart"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_toRightOf="@id/profileImageView">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/font_12_or_15dp_color"
+            android:textSize="@dimen/font_size_12dp" />
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_below="@+id/description"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_11"
+            android:background="@drawable/circle" />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toRightOf="@id/circle"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/font_12_or_15dp_color"
+            android:textSize="@dimen/font_size_12dp" />
+
+        <ImageView
+            android:id="@+id/starImageView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toRightOf="@id/language"
+            android:src="@mipmap/star" />
+
+        <TextView
+            android:id="@+id/starsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toRightOf="@id/starImageView"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/font_12_or_15dp_color"
+            android:textSize="@dimen/font_size_12dp" />
+
+        <ImageView
+            android:id="@+id/forkImageView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toRightOf="@id/starsCount"
+            android:src="@mipmap/fork" />
+
+        <TextView
+            android:id="@+id/gitCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toRightOf="@id/forkImageView"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/font_12_or_15dp_color"
+            android:textSize="@dimen/font_size_12dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="info.androidhive.recyclerviewsearch.MainActivity">
+    <item
+        android:id="@+id/sortByStar"
+        android:title="Sort by stars"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sortByName"
+        android:title="Sort by name"
+        app:showAsAction="never"/>
+</menu>

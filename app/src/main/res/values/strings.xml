@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Trend API</string>
+    <string name="toolbar_title">Trending</string>
+    <string name="retry">Retry</string>
+    <string name="NA">NA</string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="alien_blocking_str">An alien is probably blocking your signal</string>
+</resources>
